@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+
+div {
+    width: 90%;
+    height: 700px;
+    margin: 30px 50px 10px 50px;
+}
+
+.principal {
+    border-radius: 40px;
+}
+
+.cua1,
+.cua2,
+.cua3,
+.cua4 {
+    border-radius: 40px;
+    border: black solid 3px;
+}
+
+.cua1 {
+    width: 40%;
+    height: 300px;
+    float: left;
+    color: red;
+}
+
+.cua2 {
+    width: 40%;
+    height: 300px;
+    float: left;
+}
+
+.cua3 {
+    width: 40%;
+    height: 300px;
+    float: left;
+    color: red;
+}
+
+.cua4 {
+    width: 40%;
+    height: 300px;
+    float: left;
+}
+
+p {
+    font-size: 300px;
+    text-align: center;
+}

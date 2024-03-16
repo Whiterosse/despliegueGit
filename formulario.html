@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+
+<body>
+    <h1>DISEÑO DE FORMULARIOS Y SUS CAMPOS</h1>
+    <p>
+        Para realizar el diseño de los formularios se debe crear la "equiqueta" (LABEL) ella mostrará algo mas o menos
+        así: <br><img src="imagen/FuenteFormulario.jpg" alt="formulario"> <br><br>
+        dice que el <strong>label type for=""</strong> se puede escribir dentro de el nombre al cual se desea ser
+        llamado cuando se le de click al input (algo asi como acceso directo).
+        dentro del label se pone el nombre que se desea que se muestre en pantalla.
+        <h2>input type</h2>
+        <p>se puede modificar el ingreso del input con la parte que se desee mostrar en pantalla, es decir, en vez de
+            poner input type text se puede poner input sumit o otras cosas como muestra el ejemplo: <br><br> <img
+                src="imagen/input.jpg" alt="input"> <br><br>
+            la etiqueta <strong> placeholder="Nombre deseado" </strong> se usa para mostrar el nombre deseao dentro del
+            recuadro</p>
+        Una vez el recuadro muestre el nombre con el placeholder se puede autocompletar el relleno. Si deseo que esto no
+        suceda se debe agregar la siguiente etiqueta <strong>autocomplete="off"</strong> <br><br>
+        <h3>Etiqueta fieldset: &nbsp; </h3> Esta etiqueta se usa para encerrar el formulario dentro de un recuadro. Si
+        se desea que tenga el recuadro un nombre para distinguirlo se debe usar la etiqueta <strong>legend</strong>
+    </p>
+    <br>
+    <form class="formulario">
+        <fieldset>
+            <legend>Mi Primer Formulario</legend>
+            <label for="">tipo de ingreso</label>
+            <input type="text" name="name" placeholder="Tu Nombre">
+            &nbsp; &nbsp;
+            <label for="">empresa</label>
+            <input type="text" name="name" placeholder="Nombre Empresa" autocomplete="off"> <br><br>
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+
+    <br><br>
+    <h2>Formulario de selección de opción</h2>
+    <p>A continuacion se mostrará como se realizan los formularios de seleccion, los cuales son utilizados por ejemplo
+        para seleccionar el sexo de la persona. <br>
+        Se usa el <strong> type="radio" name="" id=""</strong> donde dice nombre se agrega el tipo de recuadro al que
+        sera unido el texto y el <strong>ID</strong> se usa para una vez se clickee el nombre del formulario principal que en este caso se llama <Strong>Orientacion</Strong> se vaya directamente a los puntos que se deben rellenar. <br>
+        Al final del cierre de la etiqueta se pone el nombre como se desee llamar el punto. <br><img
+            src="imagen/orientacion.jpg" alt=""> <br> <br>
+        se usa la palabra <strong>checked</strong> para dar la orden que se seleccione donde se coloque. Tambien se
+        puede usar el <strong>autofocus</strong> para hacer forma de un sombreado en los recuadros que debe seleccionar
+        el usuario.
+    </p>
+    <form class="formulario">
+        <fieldset>
+            <legend>Mi Primer Formulario</legend>
+            <label for="">tipo de ingreso</label>
+            <input type="text" name="name" placeholder="Tu Nombre">
+            &nbsp; &nbsp;
+            <label for="">empresa</label>
+            <input type="text" name="name" placeholder="Nombre Empresa" autocomplete="off"> <br><br>
+            <input type="submit" value="enviar"> <br> <br>
+            <fieldset>
+                <label for="sexo">Orientacion:</label> <br>
+                <input type="radio" name="sexo" id="sexo" value="hombre" checked>Hombre <br>
+                <input type="radio" name="sexo" id="sexo" value="Mujer">Mujer <br>
+                <input type="radio" name="sexo" id="sexo" value="Indefinido">Indefinido
+            </fieldset>
+        </fieldset>
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <h2>Lista desplegable</h2>
+    <p>Para formar esta lista desplegable, se debe iniciar con la etiqueta <strong>SELECT</strong> y luego la etiqueta <strong>OPTION</strong> que es la encargada de mostrar los nombres que se desean mostrar en la lista desplegable. <br> Si deseo que un nombre de la lista desplegable se muestre por defecto se debe poner el indicador <strong>SELECTED</strong> en la palabra que se desea mostrar.</p><br><br> <img src="imagen/desplegable.jpg" alt=""><br><br>
+
+    <form>
+        <fieldset>
+            <legend><strong>Botón Desplegable</strong></legend>
+            <label for="desplegable">Desplegable:</label>
+            <select name="tareas" id="desplegable">
+                <option value="pagina web">Pagina Web</option>
+                <option value="diseño" selected>Diseño</option>
+                <option value="formulario">Formulario</option>
+            </select><br><br>
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
